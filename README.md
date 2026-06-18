@@ -1,14 +1,25 @@
 # PSYCHRONIC_EnemyClassesMZ
 
-v1.2 Adds class system to enemies (Minimal Interference)
+Adds class system to enemies (Minimal Interference)
 
-## What This Is
+## What It Does
 
-This repository contains a standalone **RPG Maker MZ plugin** from Psychronic.
+Enemy Class Plugin This plugin allows you to assign classes to enemies using note tags.
 
-## Plugin File
+## Basic Usage
 
-- `PSYCHRONIC_EnemyClassesMZ.js`
+<enemy class: ID> - Assigns class with specified ID to the enemy
+Example: <enemy class: 21> - Gives the enemy class #21
+The enemy's parameters will be influenced by the class's parameters
+and traits in addition to their base stats.
+Note: Class parameters are applied as if the enemy is level 1.
+Traits from the class are added to the enemy's existing traits.
+Enemy action patterns are preserved and unaffected by class assignment.
+
+## Compatibility
+
+- RPG Maker MZ
+- JavaScript plugin for `js/plugins/`
 
 ## Installation
 
@@ -20,11 +31,11 @@ This repository contains a standalone **RPG Maker MZ plugin** from Psychronic.
 
 This version was exported from the RPG Reactor Complex template source plugin folder.
 
-Current source version: 1.2
-
 ## Author
 
 Psychronic
+
+https://psychronic.itch.io
 
 ## License
 
